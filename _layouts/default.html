@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html ng-app="oamFrontPage" ng-controller="frontPage">
+<html ng-app="oamFrontPage">
 
   {% include head.html %}
 
-  <body>
+  <body ng-controller="frontPage">
 
     {% include header.html %}
 
-    <section class="module parallax parallax-1">
+    <section class="module parallax parallax-1" ng-style= "myprop()">
       <div class="container">
         <h1>Open Aid Map</h1>
+      </div>
+    </section><!--first section -->
+    <section class="module content">
+      <div class="container">
+        <h2>Grand Canyon</h2>
+        <p>The Grand Canyon  is a steep-sided canyon carved by the Colorado
+          River in the state of Arizona in the United States. It is contained
+          within and managed by Grand Canyon National Park, the Hualapai Tribal Nation,
+          the Havasupai Tribe and the Navajo Nation. President Theodore Roosevelt was a major proponent
+          of preservation of the Grand Canyon area, and visited it on numerous occasions
+          to hunt and enjoy the scenery.
+          The Grand Canyon is 277 miles (446 km) long, up to 18 miles (29 km) wide and
+          attains a depth of over a mile (6,000 feet or 1,800 meters)</p>
+      </div>
+    </section><!--Grand Canyon content -->
+
+    <section class="module parallax parallax-2" ng-style= "myprop()">
+      <div class="container">
+        <h1>Example 2</h1>
       </div>
     </section><!--first section -->
     <section class="module content">

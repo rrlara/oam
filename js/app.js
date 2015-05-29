@@ -8,6 +8,17 @@ var app = angular.module('oamFrontPage', [], function ($interpolateProvider) {
 
 app.controller('frontPage', function($scope, $filter, $http, $location, $window) {
 
-    console.log("hola", $window);
+    console.log("hola", $window.innerHeight);
+
+
+    $scope.imageHeight = $window.innerHeight - 67;
+
+    $scope.myprop = function() {
+        return {
+
+            height: $scope.imageHeight + 'px'
+        };
+    };
+
 
 });
